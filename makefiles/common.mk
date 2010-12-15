@@ -79,9 +79,9 @@ PACKAGE_BUILDNAME ?= debug
 endif
 
 INTERNAL_CFLAGS = -DTARGET_$(_THEOS_TARGET_NAME_DEFINE)=1 $(OPTFLAG) -I$(THEOS_INCLUDE_PATH) -include $(THEOS)/Prefix.pch -Wall
-ifneq ($(GO_EASY_ON_ME),1)
-	INTERNAL_CFLAGS += -Werror
-endif
+#ifneq ($(GO_EASY_ON_ME),1)
+#	INTERNAL_CFLAGS += -Werror
+#endif
 INTERNAL_CFLAGS += $(SHARED_CFLAGS)
 
 THEOS_BUILD_DIR ?= .

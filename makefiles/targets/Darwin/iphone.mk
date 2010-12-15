@@ -7,7 +7,7 @@ ifneq ($(words $(_THEOS_TARGET_ARGS)),0)
 # A version specified as a target argument overrides all previous definitions.
 override SDKVERSION := $(firstword $(_THEOS_TARGET_ARGS))
 else
-SDKVERSION ?= 3.0
+SDKVERSION ?= 4.2
 endif
 TARGET_IPHONEOS_DEPLOYMENT_VERSION ?= $(or $(word 2,$(_THEOS_TARGET_ARGS)),$(SDKVERSION))
 

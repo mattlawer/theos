@@ -7,7 +7,7 @@ file 1 @@PROJECTNAME@@.plist
 file 12 Tweak.xm
 #import <Foundation/Foundation.h>
 
-__attribute__((constructor)) @@PROJECTNAME@@_Main()
+__attribute__((constructor)) static void @@PROJECTNAME@@_Main()
 {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
